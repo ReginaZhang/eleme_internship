@@ -1,0 +1,8 @@
+# schema="create"
+[mysql]
+  dbname="pansible"
+  host="localhost"
+  port=3306
+  user="root"
+  pass="toor"
+  sslmode="false"

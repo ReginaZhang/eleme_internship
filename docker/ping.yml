@@ -1,0 +1,9 @@
+- hosts: all
+  user: root
+  gather_facts: False
+  strategy: free
+  tasks:
+    - name: ls
+      command: ls
+    - name: pwd
+      command: pwd

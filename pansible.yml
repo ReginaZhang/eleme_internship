@@ -1,0 +1,36 @@
+# This is a example configuration file for pansible server., with default value 
+# for every field. This can be used directly as a config for local development.
+
+###############################################################################
+# Database configuration
+###############################################################################
+
+mysql_address: 127.0.0.1:3306
+mysql_db: pansible
+mysql_user: root
+mysql_pass: toor
+
+###############################################################################
+# Server configuration
+###############################################################################
+
+# The host of sever for runner to send request to
+host: localhost
+
+# The port for the http server to listen on
+http_port: 5757
+
+# The port for the https server to listen on
+https_port: 5858
+
+# The ssh key used to run ansible job 
+ssh_key: tmp/keydir/id
+
+# Secret used to sign jwt token.
+# DO NOT USE THIS DEFAULT VALUE IN PRODUCTION
+jwt_secret: secret
+
+# Secret used to decrypt ssh keyfile content.
+# Must be 32 bytes long
+# DO NOT USE THIS DEFAULT VALUE IN PRODUCTION
+aes_secret: a very very very very secret key
